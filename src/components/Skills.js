@@ -6,6 +6,7 @@ import skill2 from "../assets/img/Language.jpg";
 import skill3 from "../assets/img/graphic-design-tools.jpeg";
 import skill4 from "../assets/img/About me.jpg";
 import colorSharp from "../assets/img/color-sharp.png";
+import React from 'react'
 
 export const Skills = () => {
   const responsive = {

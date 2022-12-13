@@ -332,25 +332,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {/*橫幅整體設定*/
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url("./assets/img/colorful-abstract-nebula-space-background.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {/*橫幅 顏色格子 設定*/
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 20px;
+.banner .tagline-box {/*橫幅 顏色格子-格子 設定*/
+  width: 200px;
+  height: 50px;
+}
+.banner .tagline {/*橫幅 顏色格子-字體 設定*/
+  width: 400px;
+  height: 40px;
+  padding-left: 7px;
+  box-sizing: border-box;
+  font-weight: 500;
+  letter-spacing: 1.5px;
   background: linear-gradient(
     90.21deg,
     rgba(255, 0, 89, 0.5) -5.91%,
     rgba(85, 0, 255, 0.5) 111.58%
-  );
+    );
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
+  font-size: 30px;
+  margin: 5px 0;
+  display: flex;
+}
+.banner .tagline .textSpace {
+    margin-left: 15px;
+}
+.banner .tagline p:hover {
+  color: #00ff00;
 }
 
 /*字體彈跳設定*/
@@ -369,16 +382,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 15px;
 }
 .banner h1 p:hover{
-  animation : rubberBand 800ms alternate ease-out;
+  color: aqua;
+}
+.rubberBand {
+  animation: rubberBand 1s;
 }
 
-@keyframes rubberBand {
+/* @keyframes rubberBand {
   0%{
       transform: scaleX(1);
   }
   40%{
-      transform: scaleX(1.12) scaleY(0.75);
-  }
+      transform: scaleX(1.4) scaleY(0.75);
+    }
   55%{
       transform: scaleX(0.85) scaleY(1);
   }
@@ -393,6 +409,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   100%{
       transform: scaleX(1) scaleY(1);
+  }
+} */
+@keyframes rubberBand {
+  0%{
+      transform: scale3d(1, 1, 1);
+  }
+  30%{
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  40%{
+      transform: scale3d(0.75, 1.25, 1);
+  }
+  50%{
+      transform: scale3d(1.15, 0.85, 1);
+  }
+  65%{
+      transform: scale3d(0.95, 1.05, 1);
+  }
+  75%{
+      transform: scale3d(1.05, 0.95, 1);
+  }
+  100%{
+      transform: scale3d(1, 1, 1);
   }
 }
 /*-----------------------------*/
@@ -411,7 +450,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {/*橫幅  let's contact 按鈕  設定*/
+.banner button {/*橫幅  See My Resume 按鈕  設定*/
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -420,7 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg { /*橫幅  let's contact 箭頭按鈕  設定*/
+.banner button svg { /*橫幅  See My Resume 箭頭按鈕  設定*/
   font-size: 25px;
   margin-left: 20px;
   transition: 0.3s ease-in-out;
@@ -429,20 +468,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {/*橫幅  右方圖片  設定*/
-  animation: updown 3s linear infinite;
+.banner .threeJs {/*橫幅  右方圖片  設定*/
+  width: 400px;
+  height: 400px;
 }
-@keyframes updown {/*橫幅  let's contact 按鈕  設定*/
+/* @keyframes SpritePlane {/*橫幅  右方圖片-動畫  設定
   0% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(20px);
+    background-position: 0;
   }
   100% {
-    transform: translateY(-20px);
+    background-position: -22424px;
   }
-}
+} */
 .txt-rotate > .wrap {
   border-right: 20px solid #666;
 }
@@ -624,7 +661,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -652,7 +689,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************
+/************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -723,7 +760,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
-*/
+
 
 /************ Footer Css ************
 .footer {

@@ -1,8 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/logo.png";
 import { useState, useEffect } from "react";
-import { Bounce } from './Bounce'
+import { Bounce } from './Bounce/Bounce'
+import { Bounce2 } from './Bounce/Bounce2'
+import React from 'react'
+import { Three } from './Three'
 
 
 const salesYear = () => {
@@ -61,7 +63,7 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <p className="backWords">{"<h1>"}</p>
-            <span className="tagline">Compiled Successfully!</span>
+            <Bounce2/>
             <h1>
               <Bounce />
               <span className="wrap"> {text}</span>
@@ -75,11 +77,13 @@ export const Banner = () => {
             </p>
             <p className="backWords">{"</p>"}</p>
             <button onClick={() => console.log("contact")}>
-              Let's contact <ArrowRightCircle size={25} />
+              See my Resume <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            <div className="threeJs">
+              {/* <Three /> */}
+            </div>
           </Col>
         </Row>
       </Container>
