@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import contactImg from '../assets/img/contact.jpg';
 import React from 'react'
+import emailjs from '@emailjs/browser'
 
 
 export const Contact = () => {
@@ -40,24 +41,22 @@ export const Contact = () => {
         onFormUpdate('message', e.target.value)
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText('Sending...');
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "content-Type": "Application/json;charset=utf-8"
-            },
-            body: JSON.stringify(formDetails)
-        })
-        setButtonText("Send");
-        let result = response.json;
-        setFormDetails(formInitialDetails);
-        if(result.code === 200) {
-            setStatus({ success: true, message: 'Message sent successfully!'})
-        }else {
-            setStatus({ success: false, message: 'Something wrong, please try again later!'})
-        }
+    const sendEmail = (e) => {
+        e.preventDefault()
+    
+        const firstName = formDetails.firstName;
+        const lastName = formDetails.lastName;
+        const email = formDetails.email;
+        const phone = formDetails.phone;
+        const message = formDetails.message;
+        const templateParams = {
+            to_name: 'Wilson Shean',
+            from_name: firstName + lastName,
+            message: message,
+            reply_to: email,
+            phone: phone
+        };
+        emailjs.send("service_eo2czsu", "template_4qlvqcr", templateParams, "VACIso3FT4AJt_17d");
     }
 
   return (
@@ -69,7 +68,7 @@ export const Contact = () => {
                 </Col>
                 <Col md={6}>
                     <h2>Contact me now</h2>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={sendEmail}>
                         <Row>
                             <Col sm={6} className='px-1'>
                                 <input type='text' value={formDetails.firstName} placeholder='First Name' onChange={changeFirstName} />

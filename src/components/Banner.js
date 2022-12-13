@@ -47,15 +47,15 @@ export const Banner = () => {
     }
   };
 
-//   useEffect(() => {//只要text有在改變   則執行tick
-//     let ticker = setInterval(() => {
-//       tick();
-//     }, delta);
+  useEffect(() => {//只要text有在改變   則執行tick
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
 
-//     return () => {
-//       clearInterval(ticker);
-//     };
-//   });
+    return () => {
+      clearInterval(ticker);
+    };
+  });
 
   return (
     <section className="banner" id="home">
