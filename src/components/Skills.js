@@ -8,6 +8,7 @@ import skill4 from "../assets/img/About me.jpg";
 import colorSharp from "../assets/img/color-sharp.png";
 import React from 'react'
 
+
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -29,7 +30,15 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="skills" data-aos="fade-up"
+      data-aos-offset="50"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <Container>
         <Row>
           <Col>

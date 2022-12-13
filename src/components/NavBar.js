@@ -10,15 +10,19 @@ import navIcon3 from "../assets/img/linkedin-3.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(0);
 
   useEffect(() => {
     //捲動side effect
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      if (window.scrollY > 50 && window.scrollY < 1500 ) {
+        setScrolled(51);
+        console.log('50')
+      }else if (window.scrollY > 1500 ){
+        setScrolled(1801)
+        console.log('100')
+      }else {
+        setScrolled(0);
       }
     };
 
@@ -32,7 +36,7 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="lg" className={scrolled > 50 ? "scrolled" : scrolled > 1800 ? "covered" : ""}>
       <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" />
@@ -97,7 +101,7 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="linkedin" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button className="vvd" onClick={() => window.scrollTo(0, 1800)}>
               <span>Let's Contact</span>
             </button>
           </span>

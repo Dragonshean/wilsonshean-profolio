@@ -41,9 +41,9 @@ export const Contact = () => {
         onFormUpdate('message', e.target.value)
     }
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault()
-    
+        setButtonText("Sending...");
         const firstName = formDetails.firstName;
         const lastName = formDetails.lastName;
         const email = formDetails.email;
@@ -56,11 +56,27 @@ export const Contact = () => {
             reply_to: email,
             phone: phone
         };
-        emailjs.send("service_eo2czsu", "template_4qlvqcr", templateParams, "VACIso3FT4AJt_17d");
+        let response = await emailjs.send("service_eo2czsu", "template_4qlvqcr", templateParams, "VACIso3FT4AJt_17d").then((res) => { console.log(res) });
+        setButtonText("Send");
+        let result = await response.status;
+        setFormDetails(formInitialDetails);
+        if (result === 200) {
+            setStatus({ success: true, message: 'Message sent successfully'});
+        } else {
+            setStatus({ success: false, message: 'Something went wrong, please try again later.'});
+        }
     }
 
   return (
-    <section className='contact' id='contact'>
+    <section className='contact' id='contact' data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="0"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+    >
         <Container>
             <Row className='align-items-center'>
                 <Col md={6}>

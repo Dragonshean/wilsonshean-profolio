@@ -55,7 +55,15 @@ export const Projects = () => {
     },
   ];
   return (
-    <section className="project" id="projects">
+    <section className="project" id="projects" data-aos="flip-up"
+      data-aos-offset="100"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <Container>
         <Row>
           <Col>
