@@ -145,7 +145,7 @@ export const Bounce = () => {
               hoverStates[index][1](false)
             }, 1000);
           }
-          if (index == 4 || index == 8){
+          if (index === 4 || index === 8){
             return (
             <p key={index} onMouseEnter={push} onMouseLeave={pop} className={hoverStates[index][0] ? "rubberBand textSpace" : "textSpace"}>{letter}</p>
             )

@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
-import { LoadingPage } from "./pages/LoadingPage"
-import { Three } from "./pages/Three"
 import Home from "./pages/Home";
+import Three from "./pages/Three"
 import About from "./pages/About";
 import Achievement from './pages/Achievement'
+import LoadingPage from "./pages/LoadingPage"
 import { useState } from 'react'
 import React from 'react'
 
@@ -17,7 +17,7 @@ function App() {
   const loadAsync = async() => { //先 delay 在執行 讓loading是false
         setTimeout(() => {
         setLoading(false);
-      }, 2000); 
+      }, 1000); 
     }
     loadAsync()
   const loadAsync2 = async() => {

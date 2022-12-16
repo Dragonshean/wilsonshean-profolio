@@ -1,10 +1,7 @@
 import React from 'react'
 import { Loader } from '../components/Loader'
 
-export const LoadingPage = () => {
-  
-
-
+function LoadingPage () {
 
   return (
     <div>
@@ -12,3 +9,5 @@ export const LoadingPage = () => {
     </div>
   );
 };
+
+export default LoadingPage
