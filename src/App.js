@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import Home from "./pages/Home";
-import Three from "./pages/Three"
+// import Three from "./pages/Three"
 import About from "./pages/About";
 import Achievement from './pages/Achievement'
 import LoadingPage from "./pages/LoadingPage"
@@ -17,7 +17,7 @@ function App() {
   const loadAsync = async() => { //先 delay 在執行 讓loading是false
         setTimeout(() => {
         setLoading(false);
-      }, 1000); 
+      }, 5000); 
     }
     loadAsync()
   const loadAsync2 = async() => {
@@ -36,7 +36,7 @@ function App() {
       <>
         <NavBar loadingPage={loadingPage} />
         <Routes>
-          <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
+          <Route path="/" element={loading ? <LoadingPage /> : <LoadingPage />} />
           <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
           <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
           <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />

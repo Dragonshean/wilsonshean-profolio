@@ -95,15 +95,15 @@ p.danger {
 }
 /************ Loader Css ************/
 .loader-container {
-  top: 30%;
+  margin-top: 200px;
   width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   background: url('./assets/img/loading-2.png') no-repeat;
   z-index: 99;
-  background-size: 20%;
+  background-size: 250px;
   background-position: 50% 33%;
 }
 .loader-container .loading-line {
@@ -114,6 +114,7 @@ p.danger {
 .spinner {
   width: 350px;
   height: 350px;
+  position: relative;
   background: url('./assets/img/loading-1.png') no-repeat;
   background-size: 320px;
   animation: spin-anim 4s linear infinite;
@@ -228,7 +229,7 @@ nav.navbar a.navbar-brand:hover {
   top: 4px;
   left: 4px;
   overflow: hidden;
-  width: 90%;
+  width: 85px;
   height: 20px;
   background-color: #000000;
   border-radius: 2px;
@@ -497,45 +498,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   user-select: none;
   opacity: 0.2;
-  color: rgb(147, 147, 147);
+  color: rgb(219, 219, 219);
 }
 .banner .bannerInfo {/*橫幅   介紹行   設定*/
-  color: #b8b8b8;
+  color: #e1e0e0;
   font-size: 18px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 25px;
   width: 96%;
 }
-.banner button {/*橫幅  See My Resume 按鈕  設定*/
+.banner a {/*橫幅  See My Resume 按鈕  設定*/
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  text-decoration: none;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
 }
-.banner button svg { /*橫幅  See My Resume 箭頭按鈕  設定*/
+.banner a svg { /*橫幅  See My Resume 箭頭按鈕  設定*/
   font-size: 25px;
   margin-left: 20px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
-  margin-left: 25px;
+.banner a:hover svg {
+  margin-left: 40px;
 }
-.banner .threeJs {/*橫幅  右方圖片  設定*/
-  width: 400px;
-  height: 400px;
+.banner img {/*橫幅  右方圖片  設定*/
+  animation: upAndDown 3s linear infinite;
 }
-/* @keyframes SpritePlane {/*橫幅  右方圖片-動畫  設定
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: -22424px;
-  }
-} */
+@keyframes upAndDown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
 .txt-rotate > .wrap {
   border-right: 20px solid #666;
 }

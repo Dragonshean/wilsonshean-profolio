@@ -3,6 +3,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import { Bounce } from './Bounce/Bounce'
 import { Bounce2 } from './Bounce/Bounce2'
+import BannerImg from '../assets/img/Drashean_logo.png'
 import React from 'react'
 
 
@@ -57,10 +58,25 @@ export const Banner = () => {
   }, [text]);
 
   return (
-    <section className="banner" id="home">
+    <section className="banner" id="home" 
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      data-aos-offset="0"
+      data-aos-delay="50"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} 
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="10"
+            data-aos-delay="200"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-in-sine">
             <p className="backWords">{"<h1>"}</p>
             <Bounce2/>
             <h1>
@@ -75,14 +91,31 @@ export const Banner = () => {
               coding experiences
             </p>
             <p className="backWords">{"</p>"}</p>
-            <button onClick={() => console.log("contact")}>
-              See my Resume <ArrowRightCircle size={25} />
-            </button>
+            <br/>
+            <p className="backWords">{"<a>"}</p>
+            <a href='https://reurl.cc/58VmpG'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See my sales Resume <ArrowRightCircle size={25} />
+            </a><br/><p className="backWords">{"</a>"}</p><br/><p className="backWords">{"<a>"}</p>
+            <a href='https://reurl.cc/jRaAGy'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See my software Resume <ArrowRightCircle size={25} />
+            </a><br/>
+            <p className="backWords">{"</a>"}</p>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <div className="threeJs">
-              {/* <Three /> */}
-            </div>
+          <Col xs={12} md={6} xl={5}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="10"
+            data-aos-delay="200"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-easing="ease-in-sine">
+            <img src={BannerImg} alt="Img"/>
           </Col>
         </Row>
       </Container>
