@@ -85,6 +85,7 @@ select:focus {
   }
 }
 
+
 p.success {
   color: green;
 }
@@ -92,27 +93,74 @@ p.success {
 p.danger {
   color: red;
 }
+/************ Loader Css ************/
+.loader-container {
+  top: 30%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: url('./assets/img/loading-2.png') no-repeat;
+  z-index: 99;
+  background-size: 20%;
+  background-position: center;
+}
+
+.spinner {
+  width: 350px;
+  height: 350px;
+  background: url('./assets/img/loading-1.png') no-repeat;
+  background-size: 320px;
+  animation: spin-anim 4s linear infinite;
+  background-position: center;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
 /************ Navbar Css ************/
+.nav-page ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background-color: #000000;
+}
+.nav-page li {
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.nav-page li a {
+  text-decoration: none;
+}
 nav.navbar {
   /*--------------------橫幅排版-----------------*/
   padding: 18px 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  top: 0;
   z-index: 100;
   transition: 0.32s ease-in-out;
 }
-nav.navbar.covered {
-  transform: translateY(200px);
-}
 nav.navbar.scrolled {
   /*--------------------橫幅-捲動之後-----------------*/
+  top: 0;
+  position: fixed;
   padding: 0px 0;
   background-color: #1313137b;
 }
 nav.navbar a.navbar-brand {
   /*--------------------橫幅LOGO-----------------*/
-  width: 8%;
+  width: 10%;
 }
 nav.navbar a.navbar-brand:hover {
   /*--------------------橫幅LOGO-hover----------------*/
@@ -132,7 +180,7 @@ nav.navbar a.navbar-brand:hover {
     filter: saturate(98%) drop-shadow(0px 0px 5px rgb(255, 130, 53));
   }
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+.navbar-link {
   /*--------------------橫幅-右上標題設定-----------------*/
   position: relative;
   z-index: 0;
@@ -146,9 +194,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   margin-left: 20px ;
   margin-right: 20px ;
   border-radius: 2px;
+  text-decoration: none;
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover:before {/*彩色邊框-動畫*/
+.navbar-link:hover:before {/*彩色邊框-動畫*/
   content: "";
   position: absolute;
   z-index: -2;
@@ -168,7 +217,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover:before {/*彩色邊框-動�
     transform: rotate(1turn);
   }
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover:after {
+.navbar-link:hover:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -181,7 +230,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover:after {
   border-radius: 2px;
   opacity: 1;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover {
+.navbar-link:hover {
   /*--------------------橫幅-右上標題設定-鼠標懸浮----------------*/
   color: rgb(255, 216, 24);
   opacity: 1;
@@ -783,4 +832,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 } 
+.toTheTop {
+  right: 30px;
+  bottom: 200px;
+  z-index: 999;
+  color: #fff;
+  padding: 5px;
+  background-color: tomato;
+  border-radius: 10px;
+}
+.toTheTop:hover{
+  color: #ff0055;
+  background-color: black;
+}
+
+
+/*------------------------------About Page------------------------------------------------------*/
+.salesLine {
+  margin-top: 30px;
+}
+.salesLine h2{
+  text-align: center;
+}
+.salesLine p{
+  box-sizing: border-box;
+  width: 650px;
+  text-indent: 15px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+.armyLine {
+  margin-top: 30px;
+}
+.armyLine h2{
+  text-align: center;
+}
+.armyLine p{
+  box-sizing: border-box;
+  width: 650px;
+  text-indent: 15px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+.about-a {
+  font-size: 20px;
+}
+.about-a:hover {
+  color: rgb(255, 255, 0);
+}
+.about-a:active {
+  color: #ff0055;
+}
+
+/*------------------------------Sales Charts------------------------------------------------------*/
+.sales-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.sales-slider .item a {
+  cursor: pointer;
+}
+.sales-slider .item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 1px rgb(255, 168, 168) inset, 0px 0px 10px 1px rgb(255, 255, 255);
+}
+.sales-slider .item img {
+  width: 160px;
+  height: 100px;
+  margin: 0 auto 15px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -4,12 +4,11 @@ import { useState, useEffect } from "react";
 import { Bounce } from './Bounce/Bounce'
 import { Bounce2 } from './Bounce/Bounce2'
 import React from 'react'
-import { Three } from './Three'
 
 
 const salesYear = () => {
   const today = new Date();
-  return today.getFullYear() - 2018;
+  return today.getFullYear() - 2017;
 };
 const codeYear = () => {
   const firstDate = new Date();
@@ -21,8 +20,8 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false); //顯示的職位 是否正在清除
   const toRotate = ["Web Developer", "Sales Manager", "UI/UX Designer"]; //要顯示的職位
   const [text, setText] = useState(""); //現在顯示的text是甚麼
-  const [delta, setDelta] = useState(300 - Math.random() * 100); //字體出現的時間
-  const period = 500; //字體轉換的時間
+  const [delta, setDelta] = useState( 300 - Math.random() * 100); //字體出現的時間
+  const period = 2000; //字體轉換的時間
 
   const tick = () => {//字體輸入動作  函式
     let i = loopNum % toRotate.length; //  i 是 looNum 取 3 的餘數
@@ -34,16 +33,16 @@ export const Banner = () => {
     setText(updatedText);
     
     if(isDeleting) {//如果正在清除 字體的出現時間 減半
-        setDelta(prevDelta => prevDelta / 2)
+      setDelta(prevDelta => prevDelta / 2)
     } 
     
     if (!isDeleting && updatedText === fullText){//如果沒有在清除 與 字體是滿的 則 執行清除, 設定字體轉換時間
-        setIsDeleting(true);
-        setDelta(period);
+      setIsDeleting(true);
+      setDelta(period);
     }else if (isDeleting && updatedText === '') {//如果正在清除 與 字體是空的 則 執行加字, 設定職位, 字體轉換時間
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setDelta(500);
+      setLoopNum(loopNum + 1);  
+      setIsDeleting(false);
+      setDelta(500);
     }
   };
 
@@ -55,7 +54,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  });
+  }, [text]);
 
   return (
     <section className="banner" id="home">

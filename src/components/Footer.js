@@ -4,9 +4,27 @@ import navIcon1 from "../assets/img/github-1.svg";
 import navIcon2 from "../assets/img/facebook-4.svg";
 import navIcon3 from "../assets/img/linkedin-3.svg";
 import React from 'react'
+// import { useState } from 'react'
+
 
 
 export const Footer = () => {
+
+  // const [showUp, setShowUp] = useState(false)
+
+  
+  // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //   setShowUp(true)
+  // } else {
+  //   setShowUp(false)
+  // }
+  
+
+
+  const topFunction = () => {
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <footer className="footer">
       <Container>
@@ -43,6 +61,7 @@ export const Footer = () => {
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
             <p>Created by Wilson Shean.</p>
+            <button className="toTheTop" onClick={topFunction}>To the top</button>
           </Col>
         </Row>
       </Container>
