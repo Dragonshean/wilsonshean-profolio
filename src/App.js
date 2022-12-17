@@ -1,12 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
-import Home from "./pages/Home";
-// import Three from "./pages/Three"
-import About from "./pages/About";
-import Achievement from './pages/Achievement'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import LoadingPage from "./pages/LoadingPage"
 import { useState } from 'react'
 import React from 'react'
+import { lazy, Suspense } from 'react'
+
+//TODO 2022/12/17 新增 lazy load
+const Home = lazy(() => import("./pages/Home"))
+const About = lazy(() => import("./pages/About"))
+const Achievement = lazy(() => import('./pages/Achievement'))
+const Three = lazy(() => import("./pages/Three"))
 
 
 function App() {
@@ -17,7 +22,7 @@ function App() {
   const loadAsync = async() => { //先 delay 在執行 讓loading是false
         setTimeout(() => {
         setLoading(false);
-      }, 5000); 
+      }, 4000); 
     }
     loadAsync()
   const loadAsync2 = async() => {
@@ -35,12 +40,14 @@ function App() {
   return (
       <>
         <NavBar loadingPage={loadingPage} />
-        <Routes>
-          <Route path="/" element={loading ? <LoadingPage /> : <LoadingPage />} />
-          <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
-          <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
-          <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />
-        </Routes>
+        <Suspense>
+          <Routes>
+              <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
+              <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
+              <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
+              <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />
+          </Routes>
+        </Suspense>
       </>
   );
 }

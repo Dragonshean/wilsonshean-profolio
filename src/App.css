@@ -163,11 +163,11 @@ nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #1313137b;
 }
-nav.navbar a.navbar-brand {
+.Navbar-logo {
   /*--------------------橫幅LOGO-----------------*/
   width: 10%;
 }
-nav.navbar a.navbar-brand:hover {
+.Navbar-logo:hover {
   /*--------------------橫幅LOGO-hover----------------*/
   animation: animate2 1s infinite;
 }
@@ -497,7 +497,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-20px, -19px);
   position: absolute;
   user-select: none;
-  opacity: 0.2;
+  opacity: 0.1;
   color: rgb(219, 219, 219);
 }
 .banner .bannerInfo {/*橫幅   介紹行   設定*/

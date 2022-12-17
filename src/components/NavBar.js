@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/img/Drashean_logo.png";
@@ -28,13 +28,15 @@ export const NavBar = ({ loadingPage }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const navigate = useNavigate()     
+
 
   return (
     <Navbar expand="lg" className={scrolled > 50 ? "scrolled" : ""} id="home">
       <Container>
-        <Navbar.Brand href="#home">
+        <Link className="Navbar-logo" to="/" onClick={loadingPage}>
           <img src={logo} alt="logo" />
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -89,7 +91,7 @@ export const NavBar = ({ loadingPage }) => {
                 <img src={navIcon3} alt="linkedin" />
               </a>
             </div>
-            <button className="vvd" onClick={() => window.scrollTo(0, 1800)}>
+            <button className="vvd" onClick={() => navigate("/home")}>
               <span>Let's Contact</span>
             </button>
           </span>
