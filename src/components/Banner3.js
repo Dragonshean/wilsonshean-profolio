@@ -26,7 +26,6 @@ export const Banner3 = () => {
     let updatedImage = isChanging // true減少顯示的字 false增加顯示的字
       ? setLoopNum(i - 1)
       : setLoopNum(i + 1);
-    console.log(i)
       setImage(nowImage);
       
       if(isChanging) {//如果正在清除 字體的出現時間 減半

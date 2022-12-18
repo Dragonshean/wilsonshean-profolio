@@ -80,7 +80,7 @@ export const Skills = () => {
                     <ul>
                       <li><h6>Adobe Premiere CC</h6></li>
                       <li><h6>Adobe Illustrator CS6</h6></li>
-                      <li><h6>PhotoShop</h6></li>
+                      <li><h6>PhotoShop, Blender</h6></li>
                       <li><h6>PowerDirector</h6></li>
                       <li><h6>Figma, SVGator</h6></li>
                     </ul>

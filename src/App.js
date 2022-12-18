@@ -4,10 +4,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import LoadingPage from "./pages/LoadingPage"
 import React, { lazy, useState } from 'react'
-import Home from './pages/Home'
+// import Home from './pages/Home'
 
 //TODO 2022/12/17 新增 lazy load
-// const Home = lazy(() => import("./pages/Home"))
+const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
 const Achievement = lazy(() => import('./pages/Achievement'))
 const Three = lazy(() => import("./pages/Three"))
@@ -45,6 +45,7 @@ function App() {
   return (
       <>
         <NavBar loadingPage={loadingPage} />
+        <Three />
           <Routes>
               <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
               <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
