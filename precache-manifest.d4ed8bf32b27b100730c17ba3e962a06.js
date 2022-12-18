@@ -76,20 +76,20 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/linkedin-3.5b238434.svg"
   },
   {
-    "revision": "6e6219ee811d23dae1806876e2870b0c",
-    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
+    "revision": "c99cae385c76148238608d037cc53d83",
+    "url": "/wilsonshean-profolio/static/media/DynaPuff-Bold.c99cae38.ttf"
   },
   {
     "revision": "e9228c17c13a87653f1b8ed01a3ff306",
     "url": "/wilsonshean-profolio/static/media/footer-bg.e9228c17.png"
   },
   {
-    "revision": "c99cae385c76148238608d037cc53d83",
-    "url": "/wilsonshean-profolio/static/media/DynaPuff-Bold.c99cae38.ttf"
-  },
-  {
     "revision": "f7138cf00b111282887296a97c3e0162",
     "url": "/wilsonshean-profolio/static/media/DynaPuff-Medium.f7138cf0.ttf"
+  },
+  {
+    "revision": "6e6219ee811d23dae1806876e2870b0c",
+    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
   },
   {
     "revision": "4af48454b51ec0e98cf0c4970c981afe",
@@ -116,16 +116,16 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/SaigonTex.4fafeab9.png"
   },
   {
-    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
-    "url": "/wilsonshean-profolio/static/media/revicons.04eb8fc5.woff"
-  },
-  {
     "revision": "17629a5dfe0d3c3946cf401e1895f091",
     "url": "/wilsonshean-profolio/static/media/revicons.17629a5d.ttf"
   },
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/wilsonshean-profolio/static/media/revicons.2feb69cc.eot"
+  },
+  {
+    "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
+    "url": "/wilsonshean-profolio/static/media/revicons.04eb8fc5.woff"
   },
   {
     "revision": "6961f8a90f485638d761aba5d5941c7c",
