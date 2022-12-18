@@ -114,8 +114,9 @@ export const Banner = () => {
             data-aos-delay="200"
             data-aos-mirror="true"
             data-aos-once="false"
-            data-aos-easing="ease-in-sine">
-            <img src={BannerImg} alt="Img"/>
+            data-aos-easing="ease-in-sine"
+          >
+            <img className="homeImg" src={BannerImg} alt="Img"/>
           </Col>
         </Row>
       </Container>

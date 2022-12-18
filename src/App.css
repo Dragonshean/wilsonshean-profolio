@@ -525,7 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner a:hover svg {
   margin-left: 40px;
 }
-.banner img {/*橫幅  右方圖片  設定*/
+.banner img.homeImg {/*橫幅  右方圖片  設定*/
   animation: upAndDown 3s linear infinite;
 }
 @keyframes upAndDown {
