@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/js/0.4f96015f.chunk.js"
   },
   {
-    "revision": "65d9b9b2d30b4b6eacff",
+    "revision": "136d2e2900fc4c48484e",
     "url": "/wilsonshean-profolio/static/css/main.e681201d.chunk.css"
   },
   {
-    "revision": "65d9b9b2d30b4b6eacff",
-    "url": "/wilsonshean-profolio/static/js/main.65d9b9b2.chunk.js"
+    "revision": "136d2e2900fc4c48484e",
+    "url": "/wilsonshean-profolio/static/js/main.136d2e29.chunk.js"
   },
   {
     "revision": "eeecf20489a4269b3095",
@@ -76,14 +76,6 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/linkedin-3.5b238434.svg"
   },
   {
-    "revision": "e9228c17c13a87653f1b8ed01a3ff306",
-    "url": "/wilsonshean-profolio/static/media/footer-bg.e9228c17.png"
-  },
-  {
-    "revision": "6e6219ee811d23dae1806876e2870b0c",
-    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
-  },
-  {
     "revision": "f7138cf00b111282887296a97c3e0162",
     "url": "/wilsonshean-profolio/static/media/DynaPuff-Medium.f7138cf0.ttf"
   },
@@ -94,6 +86,14 @@ self.__precacheManifest = [
   {
     "revision": "4af48454b51ec0e98cf0c4970c981afe",
     "url": "/wilsonshean-profolio/static/media/DynaPuff-Regular.4af48454.ttf"
+  },
+  {
+    "revision": "e9228c17c13a87653f1b8ed01a3ff306",
+    "url": "/wilsonshean-profolio/static/media/footer-bg.e9228c17.png"
+  },
+  {
+    "revision": "6e6219ee811d23dae1806876e2870b0c",
+    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
   },
   {
     "revision": "258d34edae58d6ebf11d077757889ff3",
@@ -116,12 +116,12 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/SaigonTex.4fafeab9.png"
   },
   {
-    "revision": "2feb69ccb596730c72920c6ba3e37ef8",
-    "url": "/wilsonshean-profolio/static/media/revicons.2feb69cc.eot"
-  },
-  {
     "revision": "17629a5dfe0d3c3946cf401e1895f091",
     "url": "/wilsonshean-profolio/static/media/revicons.17629a5d.ttf"
+  },
+  {
+    "revision": "2feb69ccb596730c72920c6ba3e37ef8",
+    "url": "/wilsonshean-profolio/static/media/revicons.2feb69cc.eot"
   },
   {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
@@ -272,7 +272,7 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/kratoshouse.f0a3a8e5.gltf"
   },
   {
-    "revision": "87cbb5035826e684928778b3fa42a3d9",
+    "revision": "44ad2b5fa6b9fbcce685d6cc780c3fd2",
     "url": "/wilsonshean-profolio/index.html"
   }
 ];
