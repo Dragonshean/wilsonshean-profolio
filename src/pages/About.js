@@ -1,6 +1,6 @@
 import React from 'react'
-import { Banner2 } from '../components/Banner2'
-import { Banner3 } from '../components/Banner3'
+import { Banner2 } from '../components/AboutPage/Banner2'
+import { Banner3 } from '../components/AboutPage/Banner3'
 import { Footer } from '../components/Footer';
 import { Suspense } from 'react'
 

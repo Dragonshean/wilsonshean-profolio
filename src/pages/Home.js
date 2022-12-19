@@ -1,10 +1,10 @@
 import React from 'react'
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { Banner } from '../components/Banner'
-import { Skills } from '../components/Skills'
-import { Projects } from '../components/Projects'
-import { Contact } from '../components/Contact'
+import { Banner } from '../components/HomePage/Banner'
+import { Skills } from '../components/HomePage/Skills'
+import { Projects } from '../components/HomePage/Projects'
+import { Contact } from '../components/HomePage/Contact'
 import { Footer } from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

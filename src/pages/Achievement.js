@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react'
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { Banner4 } from '../components/Banner4'
-import { Banner5 } from '../components/Banner5'
-import { SalesCharts } from '../components/salesChart';
-import { SideAchieve } from '../components/SideAchieve'
+import { Banner4 } from '../components/AchievePage/Banner4'
+import { Banner5 } from '../components/AchievePage/Banner5'
+import { SalesCharts } from '../components/AchievePage/salesChart';
+import { SideAchieve } from '../components/AchievePage/SideAchieve'
 import { Footer } from '../components/Footer';
 
 
