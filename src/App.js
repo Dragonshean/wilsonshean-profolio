@@ -27,7 +27,7 @@ function App() {
   const loadAsync = async() => { //先 delay 在執行 讓loading是false
         setTimeout(() => {
         setLoading(false);
-      }, 4000); 
+      }, 2000); 
     }
     loadAsync()
   const loadAsync2 = async() => {
@@ -45,12 +45,12 @@ function App() {
   return (
       <>
         <NavBar loadingPage={loadingPage} />
-          <Routes>
-              <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
-              <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
-              <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
-              <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />
-          </Routes>
+        <Routes>
+            <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
+            <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
+            <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
+            <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />
+        </Routes>
       </>
   );
 }

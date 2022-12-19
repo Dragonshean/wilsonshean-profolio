@@ -35,6 +35,12 @@ body {
   color: #fff !important;
   font-family: "DynaPuff", sans-serif !important;
 }
+.backLayer { /* 背景 底圖  */
+  z-index: -99;
+  height: 100vh;
+  width: auto;
+  background-image: url('./assets/img/outer-space-background.jpg');
+}
 
 h1,
 h2,
@@ -497,8 +503,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-20px, -19px);
   position: absolute;
   user-select: none;
-  opacity: 0.1;
-  color: rgb(219, 219, 219);
+  opacity: 0.4;
+  color: rgba(132, 132, 132, 0.66);
 }
 .banner .bannerInfo {/*橫幅   介紹行   設定*/
   color: #e1e0e0;

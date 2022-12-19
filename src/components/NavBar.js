@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/img/Drashean_logo.png";
@@ -28,7 +29,8 @@ export const NavBar = ({ loadingPage }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navigate = useNavigate()     
+  const navigate = useNavigate()
+
 
 
   return (
@@ -91,9 +93,9 @@ export const NavBar = ({ loadingPage }) => {
                 <img src={navIcon3} alt="linkedin" />
               </a>
             </div>
-            <button className="vvd" onClick={() => navigate("/home")}>
-              <span>Let's Contact</span>
-            </button>
+            <HashLink to='/home#contact'>
+                <button className="vvd"><span>Let's Contact</span></button>
+            </HashLink>
           </span>
         </Navbar.Collapse>
       </Container>
