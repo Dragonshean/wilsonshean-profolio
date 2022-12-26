@@ -7,6 +7,7 @@ import projImg3 from "./img/project3.jpg";
 import projImg4 from "./img/project4.JPG";
 import projImg5 from "./img/project5.JPG";
 import projImg6 from "./img/project6.JPG";
+import projImg7 from "./img/project5.JPG";
 import React from 'react'
 
 export const Projects = () => {
@@ -54,6 +55,15 @@ export const Projects = () => {
       link: "https://github.com/Dragonshean/Wilson-Shean-Website"
     },
   ];
+  const projects2 = [
+    {
+      id: 1,
+      title: "Next.js-Project",
+      description: "View Project",
+      imgUrl: projImg7,
+      link: "https://github.com/Dragonshean/Nextjs-Project"
+    }
+  ];
   return (
     <section className="project" id="projects" data-aos="flip-up"
       data-aos-offset="100"
@@ -90,7 +100,11 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  Will Update In The Future!!
+                  <Row>
+                    {projects2.map((project) => {
+                      return ( <ProjectCard key={project.id} {...project} />)
+                    })}
+                  </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   Will Update In The Future!!

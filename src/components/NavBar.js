@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -29,14 +29,14 @@ export const NavBar = ({ loadingPage }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
 
 
   return (
     <Navbar expand="lg" className={scrolled > 50 ? "scrolled" : ""} id="home">
       <Container>
-        <Link className="Navbar-logo" to="/" onClick={loadingPage}>
+        <Link className="Navbar-logo" to="/three" onClick={loadingPage}>
           <img src={logo} alt="logo" />
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -45,7 +45,7 @@ export const NavBar = ({ loadingPage }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link
-              to="/home"
+              to="/"
               className="navbar-link"
               onClick={loadingPage}
             >

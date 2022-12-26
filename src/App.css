@@ -526,18 +526,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner a:hover svg {
   margin-left: 40px;
 }
-.banner img.homeImg {/*橫幅  右方圖片  設定*/
-  animation: upAndDown 3s linear infinite;
+.banner .homeImg {/*橫幅  右方圖片  設定*/
+  width: 390px;
+  height: 390px;
+  background: url('./components/HomePage/img/Drashean_logo.png');
+  background-size: cover;
+  animation: glitch 4s infinite steps(1);
 }
-@keyframes upAndDown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
+
+/*左側龍圖案-動畫變化設定*/
+@keyframes glitch {
+    0%,
     100% {
-        transform: translateY(-20px);
+        background: url('./components/HomePage/img/Drashean_logo.png');
+        background-size: cover;
+    }
+
+    92.5% {
+        background: url('./components/HomePage/img/1.png');
+        background-size: cover;
+        opacity: 1;
+    }
+
+    95% {
+        background: url('./components/HomePage/img/2.png');
+        background-size: cover;
+        opacity: 0;
+    }
+
+    97.5% {
+        background: url('./components/HomePage/img/3.png');
+        background-size: cover;
+        opacity: 1;
     }
 }
 .txt-rotate > .wrap {

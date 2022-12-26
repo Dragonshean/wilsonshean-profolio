@@ -3,7 +3,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 import { Bounce } from '../Bounce/Bounce'
 import { Bounce2 } from '../Bounce/Bounce2'
-import BannerImg from './img/Drashean_logo.png'
+// import BannerImg from './img/Drashean_logo.png'
 import React from 'react'
 
 
@@ -87,8 +87,8 @@ export const Banner = () => {
             <br />
             <p className="backWords">{"<p>"}</p>
             <p className="bannerInfo">
-              With {salesYear()} years sales experiences, and {codeYear()} year
-              coding experiences
+              With {salesYear()} years sales experiences, <br/>and {codeYear()} year
+              self-coding experiences
             </p>
             <p className="backWords">{"</p>"}</p>
             <br/>
@@ -116,7 +116,7 @@ export const Banner = () => {
             data-aos-once="false"
             data-aos-easing="ease-in-sine"
           >
-            <img className="homeImg" src={BannerImg} alt="Img"/>
+            <div className="homeImg"/>
           </Col>
         </Row>
       </Container>

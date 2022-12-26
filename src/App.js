@@ -46,8 +46,8 @@ function App() {
       <>
         <NavBar loadingPage={loadingPage} />
         <Routes>
-            <Route path="/" element={loading ? <LoadingPage /> : <Three />} />
-            <Route path="/home" element={loading ? <LoadingPage/> : <Home />} />
+            <Route path="/three" element={loading ? <LoadingPage /> : <Three />} />
+            <Route path="/" element={loading ? <LoadingPage/> : <Home />} />
             <Route path="/about" element={loading ? <LoadingPage/> : <About />} />
             <Route path="/achievement" element={loading ? <LoadingPage/> : <Achievement />} />
         </Routes>

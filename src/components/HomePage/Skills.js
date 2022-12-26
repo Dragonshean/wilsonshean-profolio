@@ -54,7 +54,7 @@ export const Skills = () => {
                   <h5>Web Development</h5>
                   <div className="skillInfo">
                     <ul>
-                      <li><h6>Java, JavaScript, Typescript</h6></li>
+                      <li><h6>JavaScript, Typescript</h6></li>
                       <li><h6>PostCSS, SCSS</h6></li>
                       <li><h6>Next.js, Three.js</h6></li>
                       <li><h6>React, React Native</h6></li>
