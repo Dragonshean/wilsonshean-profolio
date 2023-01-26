@@ -34,7 +34,8 @@ export const Banner2 = () => {
             </p>
             <p className="backWords">{"</p>"}</p>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} >
+            <br/>
             <p className="backWords">{"<img/>"}</p>
             <img src={hauming} alt="img"/>
             <a 

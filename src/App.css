@@ -79,14 +79,6 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
-}
-
-
 p.success {
   color: green;
 }
@@ -132,7 +124,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 .top-left-icon-arrow {
-  margin-left: 1rem;
+  margin-left: 1px;
   animation: left-and-right 1s infinite;
 }
 @keyframes left-and-right{
@@ -144,7 +136,7 @@ p.danger {
   }
 }
 .top-left-icon-text{
-  margin-left: 1rem;
+  margin-left: 1px;
   margin-bottom: 0;
 }
 .nav-page ul {
@@ -178,7 +170,7 @@ nav.navbar.scrolled {
   top: 0;
   position: fixed;
   padding: 0px 0;
-  background-color: #1313137b;
+  background-color: #131313f2;
 }
 .Navbar-logo {
   /*--------------------橫幅LOGO-----------------*/
@@ -401,6 +393,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+.navbar-collapse .show{
+  background: #000000;
 }
 
 /************ Banner Css ************/
@@ -959,6 +954,95 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+/* 小設備 (平板電腦和大型手機，600 像素及以上) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+  #home {
+    max-width: 768px;
+  }
+  .salesLine {
+    max-width: 600px;
+  }
+  .salesLine p {
+    max-width: 500px;
+  }
+  .armyLine p {
+    max-width: 600px;
+  }
+  .armyLine p {
+    max-width: 500px;
+  }
+  .top-left-icon-arrow {
+    position: fixed;
+    margin-left: 90px;
+  }
+  .top-left-icon-text {
+    position: fixed;
+    margin-left: 120px;
+  }
+}
+
+/* 中型設備（平板電腦，768 像素及以上） */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+  #home {
+    max-width: 992px;
+    min-width: 768px;
+  }
+  .salesLine p {
+    max-width: 360px;
+    min-width: 350px;
+  }
+  .armyLine p {
+    max-width: 340px;
+    min-width: 350px;
+  }
+} 
+
+/* 大型設備（筆記型電腦，992 像素及以上） */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+  #home {
+    max-width: 1200px;
+    min-width: 480px;
+  }
+  .salesLine p {
+    max-width: 450px;
+    min-width: 100px;
+  }
+  .armyLine p {
+    max-width: 450px;
+    min-width: 100px;
+  }
+  .top-left-icon-arrow {
+    position: fixed;
+    margin-left: 110px;
+    margin-top: 60px;
+  }
+  .top-left-icon-text {
+    position: fixed;
+    margin-left: 135px;
+    margin-top: 60px;
+  }
+} 
+
+/* 超大型設備（大型筆記型電腦，1200 像素及以上） */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+  #home {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+  #home {
+    max-width: 1700px;
+  }
+}
 
 
 

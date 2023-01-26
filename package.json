@@ -2,7 +2,7 @@
   "name": "shean-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dragonshean.github.io/wilsonshean-profolio/src",
+  "homepage": "https://dragonshean.github.io/wilsonshean-profolio",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.46.7",
