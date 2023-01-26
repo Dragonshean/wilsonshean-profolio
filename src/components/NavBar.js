@@ -9,6 +9,7 @@ import logo from "../assets/img/Drashean_logo.png";
 import navIcon1 from "../assets/img/github-1.svg";
 import navIcon2 from "../assets/img/facebook-4.svg";
 import navIcon3 from "../assets/img/linkedin-3.svg";
+import { ArrowLeftCircleFill } from "react-bootstrap-icons";
 
 export const NavBar = ({ loadingPage }) => {
   const [scrolled, setScrolled] = useState(0);
@@ -39,6 +40,7 @@ export const NavBar = ({ loadingPage }) => {
         <Link className="Navbar-logo" to="/three" onClick={loadingPage}>
           <img src={logo} alt="logo" />
         </Link>
+        <ArrowLeftCircleFill size={20} className='top-left-icon-arrow'/> <p className='top-left-icon-text'> press to see 3D module</p>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>

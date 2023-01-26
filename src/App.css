@@ -131,6 +131,22 @@ p.danger {
   }
 }
 /************ Navbar Css ************/
+.top-left-icon-arrow {
+  margin-left: 1rem;
+  animation: left-and-right 1s infinite;
+}
+@keyframes left-and-right{
+  0% {
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-10px);
+  }
+}
+.top-left-icon-text{
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
 .nav-page ul {
   display: flex;
   text-decoration: none;
