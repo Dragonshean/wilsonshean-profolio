@@ -47,7 +47,7 @@ export const NavBar = ({ loadingPage }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Link
-              to="/"
+              to="/home"
               className="navbar-link"
               onClick={loadingPage}
             >

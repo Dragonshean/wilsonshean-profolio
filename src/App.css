@@ -973,11 +973,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     max-width: 500px;
   }
   .top-left-icon-arrow {
-    position: fixed;
+    position: absolute;
     margin-left: 90px;
   }
   .top-left-icon-text {
-    position: fixed;
+    position: absolute;
     margin-left: 120px;
   }
 }
@@ -1015,12 +1015,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     min-width: 100px;
   }
   .top-left-icon-arrow {
-    position: fixed;
+    position: absolute;
     margin-left: 110px;
     margin-top: 60px;
   }
   .top-left-icon-text {
-    position: fixed;
+    position: absolute;
     margin-left: 135px;
     margin-top: 60px;
   }
@@ -1030,17 +1030,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media only screen and (min-width: 1200px) {
   .example {background: pink;}
   #home {
-    max-width: 1200px;
+    max-width: 1700px;
+    min-width: 600px;
+  }
+  .salesLine p {
+    max-width: 450px;
+    min-width: 100px;
+  }
+  .armyLine p {
+    max-width: 450px;
+    min-width: 100px;
+  }
+  .top-left-icon-arrow {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 0px;
+  }
+  .top-left-icon-text {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 0px;
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1400px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
   }
   #home {
     max-width: 1700px;
+  }
+  .Navbar-logo {
+    width: 8%;
   }
 }
 
