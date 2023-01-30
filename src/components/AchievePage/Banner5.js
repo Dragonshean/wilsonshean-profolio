@@ -17,8 +17,7 @@ export const Banner5 = () => {
       data-aos-duration="2000"
       data-aos-offset="0"
       data-aos-delay="50"
-      data-aos-mirror="true"
-      data-aos-once="false"
+      data-aos-once="true"
       data-aos-anchor-placement="top-center"
     >
       <Container>

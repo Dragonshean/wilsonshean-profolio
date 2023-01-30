@@ -11,8 +11,7 @@ export const Army = () => {
             data-aos-duration="2000"
             data-aos-offset="0"
             data-aos-delay="300"
-            data-aos-mirror="true"
-            data-aos-once="false"
+            data-aos-once="true"
             data-aos-anchor-placement="top-center"
         >
             <h2>Airborne Special Forces - 1 Year</h2>

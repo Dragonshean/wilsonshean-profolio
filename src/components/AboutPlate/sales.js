@@ -10,8 +10,7 @@ export const Sales = () => {
             data-aos-duration="2000"
             data-aos-offset="0"
             data-aos-delay="400"
-            data-aos-mirror="true"
-            data-aos-once="false"
+            data-aos-once="true"
             data-aos-anchor-placement="top-center"
         >
             <h2>Sales Representative - 5 Years</h2>
