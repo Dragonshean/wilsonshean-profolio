@@ -1059,7 +1059,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 0 150px;
   }
   #home {
-    max-width: 1700px;
+    max-width: 100%;
   }
   .Navbar-logo {
     width: 8%;
