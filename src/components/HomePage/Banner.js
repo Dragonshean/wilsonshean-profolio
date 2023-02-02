@@ -9,11 +9,11 @@ import React from 'react'
 
 const salesYear = () => {
   const today = new Date();
-  return today.getFullYear() - 2017;
+  return today.getFullYear() - 2018;
 };
 const codeYear = () => {
   const firstDate = new Date();
-  return firstDate.getFullYear() - 2021;
+  return firstDate.getFullYear() - 2022;
 };
 
 export const Banner = () => {
@@ -74,14 +74,13 @@ export const Banner = () => {
             data-aos-duration="1000"
             data-aos-offset="10"
             data-aos-delay="200"
-            data-aos-mirror="true"
-            data-aos-once="false"
+            data-aos-once="true"
             data-aos-easing="ease-in-sine">
             <p className="backWords">{"<h1>"}</p>
             <Bounce2/>
             <h1>
               <Bounce />
-              <span className="wrap"> {text}</span>
+              <span className="wrap" id="wrap"> {text}</span>
             </h1>
             <p className="backWords">{"</h1>"}</p>
             <br />

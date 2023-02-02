@@ -571,9 +571,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         opacity: 1;
     }
 }
-.txt-rotate > .wrap {
-  border-right: 20px solid #666;
+#wrap {
+  border-right: 8px solid rgba(129, 126, 126, 0.792);
+  animation: type 2s infinite ease;
 }
+
+@keyframes type {
+  0% {
+    border-right: 8px solid rgba(129, 126, 126, 0.715);
+  }
+  100% {
+    border-right: 8px solid rgba(0, 0, 0, 0.279);
+  }
+  /* 100% {
+    border-right: 8px solid rgba(129, 126, 126, 0.715);
+  } */
+}
+
 
 /************ Skills Css ************/
 .skill {
@@ -611,8 +625,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item:hover  {
+.skill-slider .item:hover {
   color: #fff;
+  height: 5rem;
   transition: 1s linear ;
   transform: translateY(-176px)
 }
