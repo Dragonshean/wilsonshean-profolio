@@ -1,17 +1,22 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { useState, useEffect } from "react";
 import React from "react";
-import SF from "./img/SF-me.JPG";
-import SF1 from "./img/parachutte.JPG";
-import SF2 from "./img/parachuting.JPG";
-import SF3 from "./img/SF-me2.JPG";
-import { Army } from "../AboutPlate/army";
+import { useState, useEffect } from "react";
+import { Exhibit2024 } from "../AchievePlate/exhibit2024";
+import exhibit2024Img from "./img/intex2024-1.jpg";
+import exhibit2024Img2 from "./img/intex2024-2.jpg";
+import exhibit2024Img3 from "./img/intex2024-3.jpg";
+import exhibit2024Img4 from "./img/intex2024-4.jpg";
 
-export const Banner3 = () => {
+export const Banner7 = () => {
   const [loopNum, setLoopNum] = useState(1); //找出要顯示的圖片的index
-  const toRotate = [SF, SF1, SF2, SF3]; //要顯示的圖片
+  const toRotate = [
+    exhibit2024Img,
+    exhibit2024Img2,
+    exhibit2024Img3,
+    exhibit2024Img4,
+  ]; //要顯示的圖片
   const [isChanging, setIsChanging] = useState(false); //顯示的圖片 是否正在清除
-  const [image, setImage] = useState(SF); //現在顯示的圖片是甚麼
+  const [image, setImage] = useState(exhibit2024Img); //現在顯示的圖片是甚麼
   const [delta, setDelta] = useState(5000 - Math.random() * 1000); //圖片出現的時間
   const period = 5000; //圖片轉換的時間
 
@@ -34,7 +39,7 @@ export const Banner3 = () => {
       setIsChanging(true);
       setImage(nowImage);
       setDelta(period);
-    } else if (image === SF2) {
+    } else if (image === exhibit2024Img2) {
       //如果正在清除 與 字體是空的 則 執行加字, 設定職位, 字體轉換時間
       setLoopNum(0);
       setImage(nowImage);
@@ -57,9 +62,9 @@ export const Banner3 = () => {
     <section
       className="banner"
       id="home"
-      data-aos="fade-right"
-      data-aos-easing="ease-in-sine"
-      data-aos-duration="1000"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
       data-aos-offset="0"
       data-aos-delay="50"
       data-aos-once="true"
@@ -69,26 +74,25 @@ export const Banner3 = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <p className="backWords">{"<p>"}</p>
-            <Army />
+            <Exhibit2024 />
             <p className="backWords">{"</p>"}</p>
             <br />
             <p className="backWords">{"<p>"}</p>
             <p className="bannerInfo">
-              Army Airborne Special Forces - Combat Mortar Paratrooper
+              3 days for exhibition, 10 days for clients visit
             </p>
             <p className="backWords">{"</p>"}</p>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <br />
             <p className="backWords">{"<img/>"}</p>
-            <img src={image} alt="img" />
+            <img src={image} alt="img" height={50} />
             <a
-              href="https://www.youtube.com/watch?v=yeAll_ePXJM"
+              href="https://intexsouthasia.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="about-a"
             >
-              Explore the troops
+              Explore Exhibition Website
             </a>
           </Col>
         </Row>

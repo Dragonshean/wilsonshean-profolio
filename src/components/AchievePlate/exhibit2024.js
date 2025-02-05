@@ -1,7 +1,7 @@
 import React from "react";
 import { lines } from "./banner4Line";
 
-export const Exhibit2023 = () => {
+export const Exhibit2024 = () => {
   return (
     <div
       className="armyLine"
@@ -12,17 +12,17 @@ export const Exhibit2023 = () => {
       data-aos-once="true"
       data-aos-anchor-placement="top-center"
     >
-      <h2>Intex South Asia 2023 textile exhibition</h2>
+      <h2>Intex South Asia 2024 textile exhibition</h2>
       <p>
-        {lines.exhibit2023line1}
+        {lines.exhibit2024line1}
         <br />
-        {lines.exhibit2023line2}
+        {lines.exhibit2024line2}
         <br />
-        {lines.exhibit2023line3}
+        {lines.exhibit2024line3}
         <br />
-        {lines.exhibit2023line4}
+        {lines.exhibit2024line4}
         <br />
-        {lines.exhibit2023line5}
+        {lines.exhibit2024line5}
       </p>
     </div>
   );
