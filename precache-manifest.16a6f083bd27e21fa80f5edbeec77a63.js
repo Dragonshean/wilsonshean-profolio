@@ -1,43 +1,43 @@
 self.__precacheManifest = [
   {
-    "revision": "1a583ff561653ab605d1",
-    "url": "/wilsonshean-profolio/static/css/main.b67d21ee.chunk.css"
+    "revision": "9c22996e2f3f858b598a",
+    "url": "/wilsonshean-profolio/static/css/main.634b1230.chunk.css"
   },
   {
-    "revision": "1a583ff561653ab605d1",
-    "url": "/wilsonshean-profolio/static/js/main.1a583ff5.chunk.js"
+    "revision": "9c22996e2f3f858b598a",
+    "url": "/wilsonshean-profolio/static/js/main.9c22996e.chunk.js"
   },
   {
-    "revision": "b1301b235a0fcaeb18ce",
-    "url": "/wilsonshean-profolio/static/js/1.b1301b23.chunk.js"
+    "revision": "43bd6f783154a7a7da32",
+    "url": "/wilsonshean-profolio/static/js/1.43bd6f78.chunk.js"
   },
   {
-    "revision": "bd1d61c31718580eee81",
-    "url": "/wilsonshean-profolio/static/js/2.bd1d61c3.chunk.js"
+    "revision": "8f077a7050417c824e57",
+    "url": "/wilsonshean-profolio/static/js/2.8f077a70.chunk.js"
   },
   {
-    "revision": "91f509d0f3319423126b",
-    "url": "/wilsonshean-profolio/static/js/3.91f509d0.chunk.js"
+    "revision": "7064036c66bef38debf5",
+    "url": "/wilsonshean-profolio/static/js/3.7064036c.chunk.js"
   },
   {
-    "revision": "a65021b28e8e2351065c",
-    "url": "/wilsonshean-profolio/static/js/4.a65021b2.chunk.js"
+    "revision": "f5512e21a884b0232026",
+    "url": "/wilsonshean-profolio/static/js/4.f5512e21.chunk.js"
   },
   {
-    "revision": "e4d79cba5cec0e1888e4",
-    "url": "/wilsonshean-profolio/static/css/5.591dc692.chunk.css"
+    "revision": "581bdc88fe0312369344",
+    "url": "/wilsonshean-profolio/static/css/5.d39e2040.chunk.css"
   },
   {
-    "revision": "e4d79cba5cec0e1888e4",
-    "url": "/wilsonshean-profolio/static/js/5.e4d79cba.chunk.js"
+    "revision": "581bdc88fe0312369344",
+    "url": "/wilsonshean-profolio/static/js/5.581bdc88.chunk.js"
   },
   {
-    "revision": "e8f14cc9433116554192",
-    "url": "/wilsonshean-profolio/static/js/6.e8f14cc9.chunk.js"
+    "revision": "508b37100ed09906ba15",
+    "url": "/wilsonshean-profolio/static/js/6.508b3710.chunk.js"
   },
   {
-    "revision": "831b47d8edd36c26205a",
-    "url": "/wilsonshean-profolio/static/js/runtime~main.831b47d8.js"
+    "revision": "1c586acda8369c35ee18",
+    "url": "/wilsonshean-profolio/static/js/runtime~main.1c586acd.js"
   },
   {
     "revision": "27c9e2850460f960413868a07ff686e7",
@@ -60,6 +60,26 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/project5.332ed2bf.JPG"
   },
   {
+    "revision": "9840b78d77605b960ead70eda30ee0f8",
+    "url": "/wilsonshean-profolio/static/media/2.9840b78d.png"
+  },
+  {
+    "revision": "35b044146c123f6bdbba8f10884c11f7",
+    "url": "/wilsonshean-profolio/static/media/1.35b04414.png"
+  },
+  {
+    "revision": "e9228c17c13a87653f1b8ed01a3ff306",
+    "url": "/wilsonshean-profolio/static/media/footer-bg.e9228c17.png"
+  },
+  {
+    "revision": "6e6219ee811d23dae1806876e2870b0c",
+    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
+  },
+  {
+    "revision": "89908d0530bac796dcbc9c857e903a9d",
+    "url": "/wilsonshean-profolio/static/media/3.89908d05.png"
+  },
+  {
     "revision": "c99cae385c76148238608d037cc53d83",
     "url": "/wilsonshean-profolio/static/media/DynaPuff-Bold.c99cae38.ttf"
   },
@@ -70,26 +90,6 @@ self.__precacheManifest = [
   {
     "revision": "f7138cf00b111282887296a97c3e0162",
     "url": "/wilsonshean-profolio/static/media/DynaPuff-Medium.f7138cf0.ttf"
-  },
-  {
-    "revision": "6e6219ee811d23dae1806876e2870b0c",
-    "url": "/wilsonshean-profolio/static/media/loading-1.6e6219ee.png"
-  },
-  {
-    "revision": "e9228c17c13a87653f1b8ed01a3ff306",
-    "url": "/wilsonshean-profolio/static/media/footer-bg.e9228c17.png"
-  },
-  {
-    "revision": "35b044146c123f6bdbba8f10884c11f7",
-    "url": "/wilsonshean-profolio/static/media/1.35b04414.png"
-  },
-  {
-    "revision": "89908d0530bac796dcbc9c857e903a9d",
-    "url": "/wilsonshean-profolio/static/media/3.89908d05.png"
-  },
-  {
-    "revision": "9840b78d77605b960ead70eda30ee0f8",
-    "url": "/wilsonshean-profolio/static/media/2.9840b78d.png"
   },
   {
     "revision": "258d34edae58d6ebf11d077757889ff3",
@@ -116,12 +116,12 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/revicons.2feb69cc.eot"
   },
   {
-    "revision": "17629a5dfe0d3c3946cf401e1895f091",
-    "url": "/wilsonshean-profolio/static/media/revicons.17629a5d.ttf"
-  },
-  {
     "revision": "04eb8fc57f27498e5ae37523e3bfb2c7",
     "url": "/wilsonshean-profolio/static/media/revicons.04eb8fc5.woff"
+  },
+  {
+    "revision": "17629a5dfe0d3c3946cf401e1895f091",
+    "url": "/wilsonshean-profolio/static/media/revicons.17629a5d.ttf"
   },
   {
     "revision": "4f075bf80508388295a5523673121b1a",
@@ -192,6 +192,38 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/IMG_6524.54d25554.JPG"
   },
   {
+    "revision": "c89ea03b854f1955dfcc9a4e930da21a",
+    "url": "/wilsonshean-profolio/static/media/intex2023-1.c89ea03b.jpg"
+  },
+  {
+    "revision": "7bc752a91e2d790eba13ed4c1c832dfe",
+    "url": "/wilsonshean-profolio/static/media/intex2023-2.7bc752a9.jpg"
+  },
+  {
+    "revision": "b53b4c1a127795d2564ac200d11b84df",
+    "url": "/wilsonshean-profolio/static/media/intex2023-3.b53b4c1a.jpg"
+  },
+  {
+    "revision": "204307b0b16b2869cbc70fe62408e434",
+    "url": "/wilsonshean-profolio/static/media/intex2023-4.204307b0.jpg"
+  },
+  {
+    "revision": "08da9a991b2237e513f517c44a4aaa7d",
+    "url": "/wilsonshean-profolio/static/media/intex2024-1.08da9a99.jpg"
+  },
+  {
+    "revision": "3c9b80e9e426a40ad9f043f4a6cbf439",
+    "url": "/wilsonshean-profolio/static/media/intex2024-2.3c9b80e9.jpg"
+  },
+  {
+    "revision": "b8c0ad6136e797b7c61940d75f8e5181",
+    "url": "/wilsonshean-profolio/static/media/intex2024-3.b8c0ad61.jpg"
+  },
+  {
+    "revision": "5d80a108c8c062937ed6dad007979311",
+    "url": "/wilsonshean-profolio/static/media/intex2024-4.5d80a108.jpg"
+  },
+  {
     "revision": "f8e3ed9d8c9da59bb9dfc3f34dbf1ac1",
     "url": "/wilsonshean-profolio/static/media/Benefits-YoY.f8e3ed9d.png"
   },
@@ -260,11 +292,11 @@ self.__precacheManifest = [
     "url": "/wilsonshean-profolio/static/media/VTG2022.08d07c8c.png"
   },
   {
-    "revision": "f0a3a8e5dc5da340d851b309f30e870e",
-    "url": "/wilsonshean-profolio/static/media/kratoshouse.f0a3a8e5.gltf"
+    "revision": "1b78e7e0ab60423952a417b2bce519b5",
+    "url": "/wilsonshean-profolio/static/media/kratoshouse.1b78e7e0.gltf"
   },
   {
-    "revision": "8477801f7dd231595adcb1f360118e89",
+    "revision": "b767a425f0ff8a3fd9f53633eb5c985e",
     "url": "/wilsonshean-profolio/index.html"
   }
 ];
